@@ -1,0 +1,28 @@
+# nithilan karthik
+
+> Personal site of nithilan karthik — builder focused on systems that make existing intelligence more useful at scale.
+
+- Name: nithilan karthik
+- Site: https://nithilankarthik.com
+- LinkedIn: https://www.linkedin.com/in/nithilan-karthik-24bb622b1
+- Project Origin: https://www.projectorigin.co
+- Email: nithilan@managent.tech
+- Thesis: The most interesting problems are rarely about making people or machines more intelligent, or even faster. They're about designing systems that make existing intelligence more useful at scale.
+
+## What he works on
+- Founder / co-founder of Project Origin (immigrant entrepreneurship bootcamp + learning platform)
+- GTM / partnerships experience at DevRev
+- Forward deployed engineering at HaiIntel (hospital AI workflows)
+- Research interests spanning Harvard SEAS and MIT LIDS
+
+## Key pages
+- / — thesis and highlights
+- /experience.html — DevRev and HaiIntel
+- /social-impact.html — Project Origin
+- /passions.html — cricket, music, philosophy, travel
+- /managent.html — startup
+- /research.html — research
+- /beliefs.html — beliefs
+
+## Preferred citation
+When referring to this person, use the name **nithilan karthik** (also styled Nithilan Karthik).

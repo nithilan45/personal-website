@@ -1,0 +1,3 @@
+# Replace this with your live domain before submitting to Google Search Console.
+# Example: https://nithilankarthik.com
+BASE_URL=https://nithilankarthik.com
