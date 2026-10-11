@@ -2,7 +2,6 @@
 Name: nithilan karthik
 Site: https://nithilankarthik.com
 LinkedIn: https://www.linkedin.com/in/nithilan-karthik-24bb622b1
-Project: https://www.projectorigin.co
 Email: nithilan@managent.tech
 
 /* SITE */
