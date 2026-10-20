@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- seo:start -->
     <title>research · nithilan karthik</title>
-    <meta name="description" content="Ongoing research by nithilan karthik at Harvard SEAS and MIT LIDS — multi-agent systems, coordination, and fairness. Building on arXiv:2607.04697." />
+    <meta name="description" content="Research by nithilan karthik at Harvard SEAS and MIT LIDS — concurrent AI coding agents and verifier-guided coordination (NeurIPS 2026 workshop, arXiv:2610.04779), building on arXiv:2607.04697." />
     <meta name="author" content="nithilan karthik" />
     <meta name="keywords" content="nithilan karthik, Nithilan Karthik, Project Origin, DevRev, HaiIntel, immigrant entrepreneurship, GTM, forward deployed engineering" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -18,7 +18,7 @@
     <meta property="og:site_name" content="nithilan karthik" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content="research · nithilan karthik" />
-    <meta property="og:description" content="Ongoing research by nithilan karthik at Harvard SEAS and MIT LIDS — multi-agent systems, coordination, and fairness. Building on arXiv:2607.04697." />
+    <meta property="og:description" content="Research by nithilan karthik at Harvard SEAS and MIT LIDS — concurrent AI coding agents and verifier-guided coordination (NeurIPS 2026 workshop, arXiv:2610.04779), building on arXiv:2607.04697." />
     <meta property="og:url" content="https://nithilankarthik.com/research.html" />
     <meta property="og:image" content="https://nithilankarthik.com/og.png" />
     <meta property="og:image:width" content="1200" />
@@ -26,7 +26,7 @@
     <meta property="og:image:alt" content="nithilan karthik" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="research · nithilan karthik" />
-    <meta name="twitter:description" content="Ongoing research by nithilan karthik at Harvard SEAS and MIT LIDS — multi-agent systems, coordination, and fairness. Building on arXiv:2607.04697." />
+    <meta name="twitter:description" content="Research by nithilan karthik at Harvard SEAS and MIT LIDS — concurrent AI coding agents and verifier-guided coordination (NeurIPS 2026 workshop, arXiv:2610.04779), building on arXiv:2607.04697." />
     <meta name="twitter:image" content="https://nithilankarthik.com/og.png" />
     <meta name="twitter:image:alt" content="nithilan karthik" />
     <script type="application/ld+json">
@@ -149,7 +149,7 @@
       "@id": "https://nithilankarthik.com/research.html#webpage",
       "url": "https://nithilankarthik.com/research.html",
       "name": "research · nithilan karthik",
-      "description": "Ongoing research by nithilan karthik at Harvard SEAS and MIT LIDS — multi-agent systems, coordination, and fairness. Building on arXiv:2607.04697.",
+      "description": "Research by nithilan karthik at Harvard SEAS and MIT LIDS — concurrent AI coding agents and verifier-guided coordination (NeurIPS 2026 workshop, arXiv:2610.04779), building on arXiv:2607.04697.",
       "isPartOf": {
         "@id": "https://nithilankarthik.com/#website"
       },
@@ -192,7 +192,7 @@
         <p class="eyebrow">02</p>
         <h1>research</h1>
         <div class="prose">
-          <p>Two threads I’m in the middle of right now — one at Harvard SEAS, one at MIT LIDS. Both are ongoing, so I’m keeping this high-level on purpose.</p>
+          <p>Two threads I’m in the middle of — one at Harvard SEAS, one at MIT LIDS. The SEAS line is public now. The LIDS project is still ahead of submission, so that part stays high-level.</p>
         </div>
         <nav class="thread-jump" aria-label="Research">
           <a href="#seas">harvard seas</a>
@@ -206,8 +206,11 @@
           <h2>harvard seas</h2>
           <div class="prose">
             <p>This line of work started with a question that came out of building with AI coding agents: what actually happens when a lot of them open pull requests on the same repository at the same time?</p>
-            <p>We published a first cut of that measurement work on arXiv — <a href="https://arxiv.org/abs/2607.04697" target="_blank" rel="noopener noreferrer">AI Agent Pull Requests on GitHub: Frequency, Structure, and Merge Conflict Rates</a>. It looks at tens of thousands of agent-authored PRs across thousands of repos and puts numbers on how often concurrent agent work overlaps and collides. That paper is public, and it’s also the research spine underneath managent.</p>
-            <p>What I’m working on now at SEAS is an extension of that thread: if concurrent agent work is this common, how should systems decide what to check, in what order, before things land? I’m keeping the details light here — the next piece is pending at a NeurIPS workshop, and those venues don’t love seeing the work posted ahead of review. Broadly, it’s about making the coordination layer smarter when many agents share one codebase.</p>
+            <p>We published a first cut of that measurement work on arXiv — <a href="https://arxiv.org/abs/2607.04697" target="_blank" rel="noopener noreferrer">AI Agent Pull Requests on GitHub: Frequency, Structure, and Merge Conflict Rates</a>. It looks at 33,596 agent-authored pull requests across 2,807 repositories: 79.4% of those PRs are open concurrently with another agent PR, and 40.2% of the repos already have that overlap. That paper is public, and it’s the research spine underneath managent.</p>
+            <p>The follow-up is public too, with Arjun Subramanian and George Xu — <a href="https://arxiv.org/abs/2610.04779" target="_blank" rel="noopener noreferrer">Asymmetric Repository Lineage Modeling and Verifier-Guided Coordination in Concurrent AI Coding Agents</a>. It’s a NeurIPS 2026 workshop paper, in AI for Verifiable Coding. The idea is to keep three jobs apart. A file list can say two pull requests touched the same path. A model can rank which pairs look risky. Only a checker, git merge-tree, can say whether two heads actually conflict. A clean result certifies the text. Builds, tests, and what anyone meant each need their own check later.</p>
+            <p>MERGEGYM is the benchmark for that, in three tracks. One forecasts, from the open-time text, whether two PRs will share a file — a language model gets partway there, and metadata helps. One only scores a resolution after replay has confirmed a conflict, and the obvious moves, taking one side or both, still miss about a quarter of the hunks. One schedules. Making every PR wait its turn clears the collisions and stretches the schedule a lot. A gate that only sees what you know at decision time clears most of them for much less delay.</p>
+            <p>The result that stuck: on 715 pairs, 167 conflict textually, and 79 of them — 47.3% — do it even though the two PRs edited disjoint files. Each file list is measured against that PR’s own base. The checker compares both heads to the base they share, so history in between can collide them anyway. Asking whether those two histories touch a shared path already ranks the conflicts well. A small model on the same facts does a bit better, and with a third of the replay budget it surfaces most of them. We rebuilt those 79 cases on the shared base. The ones we could reconstruct all merged clean, which is what three-way merge says should happen.</p>
+            <p>When that replay is cheap — a fraction of a second in our logs — run it on every pair. The score is for the expensive checks, a build or a test suite or a spec. It orders the work. The checker is what makes the claim. <a href="https://arxiv.org/abs/2610.04779" target="_blank" rel="noopener noreferrer">arXiv:2610.04779</a>.</p>
           </div>
         </article>
 
@@ -215,7 +218,7 @@
           <p class="thread-index">02</p>
           <h2>mit lids</h2>
           <div class="prose">
-            <p>At MIT LIDS I’m working on a research project with a professor on a different kind of multi-agent problem: how you run fair group selection when the “participants” aren’t people with scarce identities, but synthetic agents — LLM personas and civic simulations that can be copied cheaply.</p>
+            <p>At MIT LIDS I’m working with Dr. Bailey Flanigan on a different kind of multi-agent problem: how you run fair group selection when the “participants” aren’t people with scarce identities, but synthetic agents — LLM personas and civic simulations that can be copied cheaply.</p>
             <p>The high-level tension is simple. Classic fairness rules break down when identities are mintable. If anyone can flood a category with near-copies of the same agent, “equal chance” stops meaning what you think it means. We’re exploring mechanisms that still respect representation goals while staying robust to that kind of flooding.</p>
             <p>This work is ongoing, and I’m being deliberately vague about the method — we’re aiming to submit to AAMAS 2027, and I don’t want to get ahead of that. What I can say is that it sits at the intersection of multi-agent systems, fairness, and what representation even means once the population can clone itself.</p>
           </div>

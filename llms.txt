@@ -12,7 +12,7 @@
 - Founder / co-founder of Project Origin (immigrant entrepreneurship bootcamp + learning platform)
 - GTM / partnerships experience at DevRev
 - Forward deployed engineering at HaiIntel (hospital AI workflows)
-- Research interests spanning Harvard SEAS and MIT LIDS
+- Research: concurrent AI coding agents and verifier-guided coordination (NeurIPS 2026 workshop, https://arxiv.org/abs/2610.04779), building on https://arxiv.org/abs/2607.04697; ongoing fairness work at MIT LIDS
 
 ## Key pages
 - / — thesis and highlights
