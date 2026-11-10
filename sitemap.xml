@@ -36,8 +36,18 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://nithilankarthik.com/games.html</loc>
+    <loc>https://nithilankarthik.com/papers/vericodegen.pdf</loc>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nithilankarthik.com/papers/verify-before-you-sign.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://nithilankarthik.com/papers/static-before-smart.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

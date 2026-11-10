@@ -6,7 +6,7 @@ Open `index.html`, or from this folder:
 python3 -m http.server 5173
 ```
 
-The thesis is the opening of `index.html`. The reel under it is Managent, research, experience, social impact, passions, and beliefs. Games live at `games.html`.
+The thesis is the opening of `index.html`. The reel under it is Managent, research, experience, social impact, passions, and beliefs. Papers live in `papers/`.
 
 To add a photograph, put the file in this folder (or in `photos/`) and drop an image into a frame:
 
